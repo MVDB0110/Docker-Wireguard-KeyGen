@@ -4,7 +4,7 @@ Clients: Number of clients which must be generated.\
 Servers: Number of servers which must be generated.
 
 ## Example Response:
-'http://<ip>:<port>/?clients=3&servers=2'
+`http://<ip>:<port>/?clients=3&servers=2`
 ```
 {
 	"Code": 200,
