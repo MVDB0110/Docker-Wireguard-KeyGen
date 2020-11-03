@@ -1,6 +1,6 @@
 # Docker-Wireguard-KeyGen
 ## Query Parameters
-Clients: Number of clients which must be generated.
+Clients: Number of clients which must be generated.\
 Servers: Number of servers which must be generated.
 
 ## Example Response:
