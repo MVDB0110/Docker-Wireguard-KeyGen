@@ -1,38 +1,36 @@
 # Docker-Wireguard-KeyGen
 ## Query Parameters
-Clients: Number of clients which must be generated.\
-Servers: Number of servers which must be generated.
+Clients: Number of clients which must be generated.
 
 ## Example Response:
-`http://<ip>:<port>/?clients=3&servers=2`
+`http://<ip>:<port>/?clients=3`
 ```
 {
 	"Code": 200,
 	"Data": [{
-		"Private": "WOjaHmy3d8ij11ldF/13bAe1amidgfcsr2QnR9gQc0k=",
-		"Public": "SYGR76Alumi3ZvW+ZQ6X2W32npjiWjCOXhwFzgB7uTw=",
-		"Server": 0,
-		"Type": "Server"
-	}, {
-		"Private": "qKfiGCPvE+Jm8JH3abuqts9QAX0ZuzTzCRlmFLdtWUQ=",
-		"Public": "W56xKYVsVDmt/lFlJUXDpi+6S9ySpp0XJCnViI4ldQU=",
-		"Server": 1,
-		"Type": "Server"
-	}, {
 		"Client": 0,
-		"Private": "INm+8jMuV6JfiLjhV7xNMDty7/I4GBbcKfmNMTg2BHQ=",
-		"Public": "2k08L34Rcu+GgE7IeI9csPDcIC9Xu2ZGoD8Iv68EH1k=",
+		"Config": "W0ludGVyZmFjZV0KQWRkcmVzcyA9IDEwLjAuMC4yLzI0Ckxpc3RlblBvcnQgPSA1MTgyMApQcml2YXRlS2V5ID0gU0VDaFBqWUhZVEd5d0xVenRQejJob0dtYnZmSHVNaFdDajFlditkSG4wMD0KCltQZWVyXQpQdWJsaWNLZXkgPSB5cncvd1BvT1BpY3U3WDlENEI3YkhoRWJsL0VDTWdqenJxRFhUa0pzUlFZPQpFbmRwb2ludCA9IApBbGxvd2VkSVBzID0gMC4wLjAuMC8wCg==",
+		"Private": "SEChPjYHYTGywLUztPz2hoGmbvfHuMhWCj1ev+dHn00=",
+		"Public": "gNQOHgFgMLIcOxHlpuMqWlFn6+O8PvHo6CIwKDPe8Eg=",
 		"Type": "Client"
 	}, {
 		"Client": 1,
-		"Private": "uBDccQqh0EvBIgdawRnFtLaai04bJZutaCAI/ZTOZEo=",
-		"Public": "ERsrxvhJVywVMXWJWtCAa0XmDw/0R1BPYPyosSImCTY=",
+		"Config": "W0ludGVyZmFjZV0KQWRkcmVzcyA9IDEwLjAuMC4zLzI0Ckxpc3RlblBvcnQgPSA1MTgyMApQcml2YXRlS2V5ID0gZUNwTU9NQXNEbkltUk1RNzNGbnR5cEtiMGxkNGgyNXpocUI5TTUxYWVIaz0KCltQZWVyXQpQdWJsaWNLZXkgPSB5cncvd1BvT1BpY3U3WDlENEI3YkhoRWJsL0VDTWdqenJxRFhUa0pzUlFZPQpFbmRwb2ludCA9IApBbGxvd2VkSVBzID0gMC4wLjAuMC8wCg==",
+		"Private": "eCpMOMAsDnImRMQ73FntypKb0ld4h25zhqB9M51aeHk=",
+		"Public": "dXrlIc1IZ+7MUXuJydMdrvFpxTgR634LKbuYlASoaR0=",
 		"Type": "Client"
 	}, {
 		"Client": 2,
-		"Private": "+IFBiFBWsY92lzx6UVlPc71ubxx/IKBp3d0uZ39cpVI=",
-		"Public": "ZODrhOIP8eyPr1gsR/zNk/vhW3HbmeJtiRtDF81+IU4=",
+		"Config": "W0ludGVyZmFjZV0KQWRkcmVzcyA9IDEwLjAuMC40LzI0Ckxpc3RlblBvcnQgPSA1MTgyMApQcml2YXRlS2V5ID0gY0xYRlFNQTVnWm9YNnFaTHZscEtZQTNaak9UODkvMi9MZUtRREZha3dHdz0KCltQZWVyXQpQdWJsaWNLZXkgPSB5cncvd1BvT1BpY3U3WDlENEI3YkhoRWJsL0VDTWdqenJxRFhUa0pzUlFZPQpFbmRwb2ludCA9IApBbGxvd2VkSVBzID0gMC4wLjAuMC8wCg==",
+		"Private": "cLXFQMA5gZoX6qZLvlpKYA3ZjOT89/2/LeKQDFakwGw=",
+		"Public": "M6G3SaftOrC8nchCwBXXek0XzveEmRhW6IM4Gscoa2w=",
 		"Type": "Client"
+	}, {
+		"Config": "W0ludGVyZmFjZV0KQWRkcmVzcyA9IDEwLjAuMC4xLzI0Ckxpc3RlblBvcnQgPSA1MTgyMApQcml2YXRlS2V5ID0gd0tZWDdqaU5qQ2wxL29EVkdQMUNlZlR3YW8wTjBlemVHdEg2YnNKVmIwRT0KUG9zdFVwID0gaXB0YWJsZXMgLUEgRk9SV0FSRCAtaSAlaSAtaiBBQ0NFUFQ7IGlwdGFibGVzIC10IG5hdCAtQSBQT1NUUk9VVElORyAtbyBldGgwIC1qIE1BU1FVRVJBREUKUG9zdERvd24gPSBpcHRhYmxlcyAtRCBGT1JXQVJEIC1pICVpIC1qIEFDQ0VQVDsgaXB0YWJsZXMgLXQgbmF0IC1EIFBPU1RST1VUSU5HIC1vIGV0aDAgLWogTUFTUVVFUkFERQoKW1BlZXJdClB1YmxpY0tleSA9IGdOUU9IZ0ZnTUxJY094SGxwdU1xV2xGbjYrTzhQdkhvNkNJd0tEUGU4RWc9CkFsbG93ZWRJUHMgPSAxMC4wLjAuMi8yNAoKW1BlZXJdClB1YmxpY0tleSA9IGRYcmxJYzFJWis3TVVYdUp5ZE1kcnZGcHhUZ1I2MzRMS2J1WWxBU29hUjA9CkFsbG93ZWRJUHMgPSAxMC4wLjAuMy8yNAoKW1BlZXJdClB1YmxpY0tleSA9IE02RzNTYWZ0T3JDOG5jaEN3QlhYZWswWHp2ZUVtUmhXNklNNEdzY29hMnc9CkFsbG93ZWRJUHMgPSAxMC4wLjAuNC8yNAoK",
+		"Private": "wKYX7jiNjCl1/oDVGP1CefTwao0N0ezeGtH6bsJVb0E=",
+		"Public": "yrw/wPoOPicu7X9D4B7bHhEbl/ECMgjzrqDXTkJsRQY=",
+		"Server": 1,
+		"Type": "Server"
 	}],
 	"Message": "Wireguard keys generated"
 }
