@@ -1,4 +1,14 @@
 # Docker-Wireguard-KeyGen
+## How to run
+### *** Requirements *** 
+- Docker or orchestration like Docker Swarm or Kubernetes
+
+### *** Starting container ***
+- Open a Command Line Interface (CLI).
+- Clone Git repository (git clone https://github.com/MVDB0110/Docker-Wireguard-KeyGen)
+- Build the docker image (eg. 'docker build -t docker-wireguard-keygen .')
+- Start a container instance (eg. 'docker run -d -p 80:80 docker-wireguard-keygen')
+
 ## Query Parameters
 Clients: Number of clients which must be generated.
 
