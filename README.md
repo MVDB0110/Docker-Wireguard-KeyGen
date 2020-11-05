@@ -45,3 +45,7 @@ Clients: Number of clients which must be generated.
 	"Message": "Wireguard keys generated"
 }
 ```
+## Knowledge
+### *** Wireguard ***
+- https://www.wireguard.com/quickstart/
+- https://upcloud.com/community/tutorials/get-started-wireguard-vpn/
